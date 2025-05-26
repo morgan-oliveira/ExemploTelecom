@@ -6,7 +6,9 @@ function App() {
     const { IsLogged } = UserAuth();
     return (
         <>
-            {IsLogged ? <Dashboard /> : <LoginComponent />}
+            <div className="father">
+                {IsLogged ? <Dashboard /> : <LoginComponent />}
+            </div>
         </>
     )
 };

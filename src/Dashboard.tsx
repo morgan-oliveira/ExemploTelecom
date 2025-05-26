@@ -1,13 +1,16 @@
 import CustomerPlanData from './components/CustomerPlanData';
 import CustomerData from './components/CustomerData';
 import TicketForm from './components/TicketForm';
+import './Dashboard.css';
 
 
 function Dashboard() {
     return (
         <>
-            <div className="dashboard-box">
+            <header>
                 <span id='welcome-user-text'>Olá, user!</span>
+            </header>
+            <main className="dashboard-box">
                 <div className="customer-plan-data">
                     <CustomerPlanData />
                 </div>
@@ -17,7 +20,7 @@ function Dashboard() {
                 <div className="ticket-form">
                     <TicketForm />
                 </div>
-            </div>
+            </main>
         </>
     );
 };

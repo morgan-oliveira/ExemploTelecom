@@ -1,0 +1,44 @@
+html,
+body,
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.father {
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome-user-text {
+    height: auto;
+    margin-right: 10%;
+}
+
+.dashboard-box {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.display-contract-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.customer-plan-data {
+    margin-top: 10%;
+}
