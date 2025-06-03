@@ -1,13 +1,14 @@
 import { UserAuth } from "./contexts/LoginContext";
-import Dashboard from "./Dashboard";
+//import Dashboard from "./Dashboard";
 import LoginComponent from "./LoginComponent";
+import SearchCustomer from "./components/SearchCustomer";
 
 function App() {
     const { IsLogged } = UserAuth();
     return (
         <>
             <div className="father">
-                {IsLogged ? <Dashboard /> : <LoginComponent />}
+                {IsLogged ? <SearchCustomer /> : <LoginComponent />}
             </div>
         </>
     )

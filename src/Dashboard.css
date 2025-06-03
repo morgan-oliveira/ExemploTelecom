@@ -7,13 +7,25 @@ body,
 
 #root {
     width: 100%;
-    margin: 0%;
+    margin-top: 5%;
     padding: 0%;
 }
+
 header {
     display: flex;
     flex-direction: row-reverse;
-    
+
+}
+
+.header-user {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+.header-user #logout {
+    margin-right: 10%;
 }
 
 .father {
@@ -29,16 +41,66 @@ header {
 .dashboard-box {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    gap: 100px;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     width: 100%;
 }
 
 .display-contract-info {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: center;
 }
+
 .customer-plan-data {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding: 10px;
+    background-color: darkcyan;
+    border-radius: 10%;
+}
+
+.customer-personal-data {
+    margin-top: 5%;
+    padding: 50px;
+    background-color: darkcyan;
+    border-radius: 4%;
+}
+
+.ticket-form {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.start-ticket h3:hover,
+#logout:hover {
+    filter: drop-shadow(0 0 0.5em black);
+    cursor: pointer;
+}
+
+.ticket-father-box {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 10%;
+    height: 100px;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column;
     margin-top: 10%;
+    justify-content: center;
+}
+
+.search-box #search-box-input {
+    width: 400px;
+    height: 40px;
+    align-self: center;
+    border-radius: 2em;
+    font-size: 2em;
+}
+.search-box #search-box-input:hover {
+    border-color: #747bff;
 }
