@@ -16,7 +16,7 @@ datasource db {
 
 model User {
   id          Int      @id @default(autoincrement())
-  username    String
+  username    String   @unique
   passHash    String
   createdAt   DateTime @default(now())
   lastUpdated DateTime @updatedAt
@@ -36,6 +36,6 @@ model Customer {
   name          String
   date_of_birth String
   adress        String
-  cpf           Int    @unique
-  plan String
+  cpf           String @unique
+  plan          String
 }
